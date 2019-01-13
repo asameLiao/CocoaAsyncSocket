@@ -26,8 +26,6 @@ Updated and maintained by Deusty LLC and the Apple development community.
 
   s.source_files = 'Source/GCD/*.{h,m}'
 
-  s.dependency 'CocoaAsyncSocket'
-
   s.requires_arc = true
 
   s.ios.deployment_target = '5.0'
@@ -37,4 +35,9 @@ Updated and maintained by Deusty LLC and the Apple development community.
   s.ios.frameworks = 'CFNetwork', 'Security'
   s.tvos.frameworks = 'CFNetwork', 'Security'
   s.osx.frameworks = 'CoreServices', 'Security'
+  s.default_subspec = 'CocoaAsyncSocket'
+
+  s.subspec 'CocoaLumberjack' do |c|
+        c.dependency 'CocoaLumberjack'
+  end
 end
