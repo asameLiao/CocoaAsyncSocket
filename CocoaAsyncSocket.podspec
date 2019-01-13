@@ -26,6 +26,8 @@ Updated and maintained by Deusty LLC and the Apple development community.
 
   s.source_files = 'Source/GCD/*.{h,m}'
 
+  s.dependency 'CocoaAsyncSocket'
+
   s.requires_arc = true
 
   s.ios.deployment_target = '5.0'
