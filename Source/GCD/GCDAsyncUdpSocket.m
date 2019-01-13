@@ -29,7 +29,7 @@
 #import <sys/types.h>
 
 
-#if 0
+#ifdef DD_LEGACY_MACROS
 
 // Logging Enabled - See log level below
 
